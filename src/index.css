@@ -1,0 +1,364 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgb(51, 51, 51);
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@media (min-width: 768px) and (max-width: 2560px) {
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .App-body {
+    min-height: 90vh;
+    max-height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  /* Nav bar */
+  .navbar {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-bottom: 1px solid gray;
+  }
+
+  .nav-logo {
+    height: 65px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-link:hover {
+    cursor: pointer;
+    color: #d68f08;
+  }
+
+
+  /* Footer */
+  .footer {  
+    border-top: 1px solid gray;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: black
+  }
+
+  .footer a:hover {
+    color: #d68f08;
+  }
+
+
+  /* Home Page */
+  video {
+    width:100%;
+  }
+
+
+  /* Illustrations*/
+  .search-section {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-field {
+    margin-left: 1rem;
+    width: 20%;
+    border-radius: 50px;
+  }
+
+  .illustration-list {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 0.6;
+  }
+
+  .illustration-list a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .illustration-list a:hover {
+    color: rgb(231, 89, 37);
+  }
+
+  .illustration-card {
+    width: 360px;
+    height: 570px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    background-color: rgb(255, 255, 255);
+
+    margin: 15px;
+  }
+
+  .illustration-card:hover {
+    border: 1px solid black;
+  }
+
+  .illustration-card-img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .illustration-card-text {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .illustration-card-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+
+  .illustration-card-links a {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .illustration-card-links a:hover {
+    font-size: 1.4rem;
+  }
+
+
+  /* About Page*/
+  .about-section {
+    height: 120%;
+    margin-bottom: 8%;
+  }
+
+  .about-section-cards {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-section .card {
+    padding: 3%;
+    margin: 2%;
+  }
+
+  .about-section-cards a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .about-section-cards a:hover {
+    color: rgb(231, 89, 37);
+  }
+
+
+  /* Profile Page*/
+  .user-profile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .user-profile-bar {
+    width: 10%;
+    
+    background-color: white;
+    color:black;
+
+    border-right: 1px solid black;
+  }
+
+  .user-img {
+    width: 100%;
+  }
+
+  .user-profile-bar a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .user-profile-info {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .user-profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .profile-card {
+    background-color: white;
+    width: 10%;
+    margin: 10px;
+  }
+
+  .profile-card p {
+    margin: 5px;
+  }
+
+  .profile-card a:hover {
+    cursor: pointer;
+  }
+
+  .profile-card-img {
+    width: 100%;
+  }
+}
+
+/* MOBILE */
+
+/*
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .body {
+    margin-top: 10%;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    margin: 0%;
+    height: 8%;
+    top: 0px;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    border-bottom: 1px solid gray;
+  }
+
+  .loggedIn,
+  .loggedOut {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 20%;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 0.2%;
+    width: 40%;
+  }
+
+  .loging,
+  .signup,
+  .logout {
+    width: 100%;
+    height: 105%;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 3vw;
+    background-color: rgb(231, 89, 37);
+  }
+
+  .nav-link {
+    width: 100%;
+    height: 19px;
+    right: 10%;
+    margin-right: 7%;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    margin-right: 4%;
+    font-size: 3vw;
+  }
+
+  .home-link {
+    visibility: hidden;
+  }
+
+  .app-logo {
+    display: flex;
+    justify-content: left;
+    margin-right: 20%;
+    align-items: center;
+  }
+  .app-logo img {
+    width: 230%;
+    height: 210%;
+  }
+
+  .footer {
+    
+  }
+
+}
+*/
